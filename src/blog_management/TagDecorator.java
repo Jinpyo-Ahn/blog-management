@@ -1,6 +1,6 @@
 package blog_management;
 
-// TagDecorator 데코레이터 클래스 -> BlogPost 객체를 감싸 태그 기능을 추가
+// TagDecorator 데코레이터 클래스 -> BlogPost 객체를 감싸 '태그' 기능을 추가
 public class TagDecorator extends BlogPost {
     private String[] tags;
 

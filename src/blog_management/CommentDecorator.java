@@ -1,6 +1,6 @@
 package blog_management;
 
-// CommentDecorator 데코레이터 클래스 -> BlogPost 객체를 감싸 댓글 기능을 추가
+// CommentDecorator 데코레이터 클래스 -> BlogPost 객체를 감싸 '댓글' 기능을 추가
 public class CommentDecorator extends BlogPost {
     private String comment;
 

@@ -33,3 +33,10 @@ Java + 디자인 패턴_블로그 게시물 관리 프로그램
 3. 커맨드 패턴
     
     게시물에 대한 **저장, 삭제 기능**에 대한 실행을 커맨드 클래스에 캡슐화
+
+### 프로젝트 설명(Notion Link)
+
+---
+[중간 점검1](https://www.notion.so/dacd744fc2ee47e0b0806b61187d5f96?pvs=4)
+
+[중간 점검2](https://www.notion.so/2-ee36ba3e3566486f9e389511ea6f1cf6?pvs=4)

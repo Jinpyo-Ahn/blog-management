@@ -1,8 +1,8 @@
 package blog_management;
 
 public class BlogPost {
-    private String title;
-    private String content;
+    final String title;
+    final String content;
 
     // 생성자를 통해 게시물의 제목과 내용을 받아 저장
     public BlogPost(String title, String content) {
@@ -16,11 +16,11 @@ public class BlogPost {
         System.out.println("내용: " + this.content);
     }
 
-    protected String getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    protected String getContent() {
+    public String getContent() {
         return content;
     }
 }

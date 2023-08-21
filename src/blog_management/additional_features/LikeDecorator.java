@@ -1,4 +1,4 @@
-package blog_management.addition;
+package blog_management.additional_features;
 
 
 import blog_management.BlogPost;
@@ -7,7 +7,7 @@ import blog_management.BlogPost;
  * LikeDecorator 데코레이터 클래스: BlogPost 객체를 감싸 '좋아요' 기능을 추가
  */
 public class LikeDecorator extends BlogPost {
-    private int likes;
+    final int likes;
 
 
     // 생성자에서 게시물의 기존 정보(제목, 내용)와 좋아요 정보(수)를 받아 인스턴스를 초기화

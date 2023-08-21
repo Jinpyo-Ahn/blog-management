@@ -1,4 +1,4 @@
-package blog_management.addition;
+package blog_management.additional_features;
 
 import blog_management.BlogPost;
 

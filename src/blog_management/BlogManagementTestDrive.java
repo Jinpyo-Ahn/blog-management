@@ -1,8 +1,5 @@
 package blog_management;
 
-import blog_management.post_save_delete.Command;
-import blog_management.post_save_delete.DeleteCommand;
-
 import java.util.Scanner;
 
 public class BlogManagementTestDrive {
@@ -24,21 +21,14 @@ public class BlogManagementTestDrive {
             scanner.nextLine(); // 버퍼 비우기
 
             switch (choice) {
-                case 1:
-                    blogManager.addPostFromUserInput();
-                    break;
-                case 2:
-                    // 삭제 기능 구현을 구현할 예정 (DeleteCommand 활용)
-                    break;
-                case 3:
-                    blogManager.displayAllPosts();
-                    break;
-                case 4:
+                case 1 -> blogManager.addPostFromUserInput();
+                case 2 -> blogManager.deletePostByTitle();
+                case 3 -> blogManager.displayAllPosts();
+                case 4 -> {
                     exit = true;
                     System.out.println("프로그램을 종료합니다.");
-                    break;
-                default:
-                    System.out.println("잘못된 선택입니다. 다시 선택해주세요.");
+                }
+                default -> System.out.println("잘못된 선택입니다. 다시 선택해주세요.");
             }
         }
 

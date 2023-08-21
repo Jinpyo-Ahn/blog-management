@@ -1,4 +1,4 @@
-package blog_management.post_save_delete;
+package blog_management.post_delete;
 
 import blog_management.BlogManager;
 import blog_management.BlogPost;

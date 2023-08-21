@@ -1,8 +1,10 @@
-package blog_management.addition;
+package blog_management.additional_features;
 
 import blog_management.BlogPost;
 
-// CommentDecorator 데코레이터 클래스 -> BlogPost 객체를 감싸 '댓글' 기능을 추가
+/**
+ * CommentDecorator 데코레이터 클래스: BlogPost 객체를 감싸 '댓글' 기능을 추가
+ */
 public class CommentDecorator extends BlogPost {
     final String comment;
 

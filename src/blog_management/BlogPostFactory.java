@@ -1,8 +1,8 @@
 package blog_management;
 
-import blog_management.addition.CommentDecorator;
-import blog_management.addition.LikeDecorator;
-import blog_management.addition.TagDecorator;
+import blog_management.additional_features.CommentDecorator;
+import blog_management.additional_features.LikeDecorator;
+import blog_management.additional_features.TagDecorator;
 
 // BlogPostFactory 클래스 -> 게시물 객체를 생성하는 역할
 public class BlogPostFactory {
@@ -18,8 +18,8 @@ public class BlogPostFactory {
         return switch (postType) {
             case "text" -> new BlogPost(title, content);
             case "text_with_likes" -> new LikeDecorator(new BlogPost(title, content), 11);
-            case "image" -> new TagDecorator(new BlogPost(title, content), new String[]{"토토로"});
-            case "video" -> new CommentDecorator(new BlogPost(title, content), "영상 화질이 좋습니다!!");
+            case "image" -> new TagDecorator(new BlogPost(title, content), new String[]{"Tag"});
+            case "video" -> new CommentDecorator(new BlogPost(title, content), "The quality of the video is good.");
             default -> throw new IllegalArgumentException("Invalid post type");
         };
     }

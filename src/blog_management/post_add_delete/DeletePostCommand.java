@@ -3,11 +3,11 @@ package blog_management.post_delete;
 import blog_management.BlogManager;
 import blog_management.BlogPost;
 
-public class DeleteCommand implements Command {
+public class DeletePostCommand implements Command {
     final BlogManager blogManager;
     final BlogPost post;
 
-    public DeleteCommand(BlogManager blogManager, BlogPost post) {
+    public DeletePostCommand(BlogManager blogManager, BlogPost post) {
         this.blogManager = blogManager;
         this.post = post;
     }

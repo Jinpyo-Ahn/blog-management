@@ -1,15 +1,15 @@
-package blog_management.post_delete;
+package blog_management.post_add_delete;
 
 import blog_management.BlogManager;
 import blog_management.BlogPost;
 
 public class DeletePostCommand implements Command {
     final BlogManager blogManager;
-    final BlogPost post;
+    final BlogPost postToDelete;
 
-    public DeletePostCommand(BlogManager blogManager, BlogPost post) {
+    public DeletePostCommand(BlogManager blogManager, BlogPost postToDelete) {
         this.blogManager = blogManager;
-        this.post = post;
+        this.postToDelete = postToDelete;
     }
 
     /**
@@ -18,7 +18,7 @@ public class DeletePostCommand implements Command {
      */
     @Override
     public void execute() {
-        blogManager.removePost(post);
-        System.out.println("삭제된 게시물: " + post.getTitle());
+        blogManager.removePost(postToDelete);
+        System.out.println("삭제된 게시물: " + postToDelete.getTitle());
     }
 }

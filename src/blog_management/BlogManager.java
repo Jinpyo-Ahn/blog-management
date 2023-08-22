@@ -1,7 +1,7 @@
 package blog_management;
-import blog_management.post_delete.AddPostCommand;
-import blog_management.post_delete.Command;
-import blog_management.post_delete.DeletePostCommand;
+import blog_management.post_add_delete.AddPostCommand;
+import blog_management.post_add_delete.Command;
+import blog_management.post_add_delete.DeletePostCommand;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,12 +45,14 @@ public class BlogManager {
         System.out.println("삭제할 게시물 제목을 입력하세요:");
         String titleToDelete = scanner.nextLine();
 
+        // 입력한 제목과 일치하는 게시물을 찾아서 삭제
         BlogPost postToDelete = posts.stream()
                 .filter(post -> post.getTitle().equals(titleToDelete))
                 .findFirst()
                 .orElse(null);
 
         if (postToDelete != null) {
+            // 게시물 삭제 작업을 커맨드 패턴을 사용하여 실행
             Command deleteCommand = new DeletePostCommand(this, postToDelete);
             executeCommand(deleteCommand);
         } else {

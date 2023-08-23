@@ -33,7 +33,7 @@
 
 [최종 발표(23.08.23)](https://www.notion.so/8097a09c4b5147a985951cc09e7709c8?pvs=4)
 
-## Code Update
+## 📃Code Update
 
 ### 08.15
 1. 게시물 추가, 삭제 기능을 구현한 커맨드 패턴 클래스 추가
@@ -46,3 +46,6 @@
 ### 08.22
 1. 기능 별로 코드를 패키지로 분리
 
+## 🔁Transform language
+
+🐤[java to javascript](https://www.notion.so/Transform-java-to-javascript-d21b3b9d1cc84db1b7bb67e33379626e?pvs=4)
